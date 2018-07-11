@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Add/Edit Officer</title>
+<link href="files/css//bootstrap.css" rel="stylesheet">
+<link href="files/css/bootstrap-responsive.css" rel="stylesheet">
+<link href="files/css/fontface.css" rel="stylesheet">
+<link href="files/css/font-awesome.css" rel="stylesheet">
+<link href="files/css/base-admin-3.css" rel="stylesheet">
+</head>
+<body>
+<div class="popupbg popupbg-common">
+  <div class='popup'>Maximum Limit for SUBVRF is 20<span class='icon-remove-sign' onclick='hide();' id='hide-popup'></span></div>
+</div>
+<div class="popupbg1 popupbg-common">
+  <div class='popup'>Maximum Limit for VLAN is 6<span class='icon-remove-sign' onclick='hide();' id='hide-popup1'></span></div>
+</div>
+<nav class="navbar navbar-inverse" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"> <span class="sr-only">Toggle navigation</span> <i class="icon-cog"></i> </button>
+      <img class="logo" src="files/images/logo.png"/>
+	  <a class="navbar-brand" href="#/themes/base/index.html">Indian Military</a> </div>
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown"> <a href="javscript:;" class="dropdown-toggle" data-toggle="dropdown"> <i class="icon-off"></i> Logout <b class="caret"></b> </a>
+          <ul class="dropdown-menu">
+            <li><a href="#/themes/base/account.html">Logout</a></li>
+          </ul>
+        </li>
+        <li class="dropdown"> <a href="javscript:;" class="dropdown-toggle" data-toggle="dropdown"> <i class="icon-user"></i>&nbsp;Brig. Vikram Singh<b class="caret"></b> </a>
+          <ul class="dropdown-menu">
+            <li><a href="#">My Profile</a></li>
+			<li class="divider"></li>
+            <li><a href="#">Account Settings</a></li>
+            
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="subnavbar">
+  
+</div>
+<div class="main">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="widget stacked ">
+          <div class="widget-header"> <i class="icon-user"></i>
+            <h3 class="master-header">Add Officer</h3>
+          </div>
+          <!-- /widget-header -->
+          <div class="widget-content">
+		  <form novalidate="novalidate" action="/" id="validation-form" role="form" class="form-horizontal col-sm-12">
+						<fieldset>
+						    <div class="form-group col-sm-6">
+						      <label for="name" class="col-sm-6">First Name</label>
+								<div class="col-sm-6">
+						        	<input type="text" class="form-control" name="name" id="name">
+								</div>
+						    </div>
+						    <div class="form-group col-sm-6">
+						      <label for="email" class="col-sm-6">last name</label>
+						      <div class="col-sm-6">
+						        <input type="text" class="form-control" name="email" id="email">
+						        </div>
+						    </div>
+							
+							<div class="form-group col-sm-6">
+				            <label for="validateSelect" class="col-sm-6">Select Entry level</label>
+							<div class="col-sm-6">
+				              <select id="validateSelect" name="validateSelect" class="form-control">
+				                <option value="">Select...</option>
+				                <option value="1">1</option>
+				                <option value="2">2</option>
+				                <option value="3">3</option>
+				                <option value="4">4</option>
+				                <option value="5">5</option>
+				              </select>
+				              </div>
+				          </div>
+							 <div class="form-group col-sm-6">
+						      <label for="email" class="col-sm-6">IC Number</label>
+						      <div class="col-sm-6">
+						        <input type="text" class="form-control" name="email" id="email">
+						        </div>
+						    </div>
+							<div class="form-group col-sm-6">
+				            <label for="validateSelect" class="col-sm-6">Gender</label>
+							<div class="col-sm-6">
+				              <select id="validateSelect" name="validateSelect" class="form-control">
+				                <option value="">Select...</option>
+				                <option value="1">Male</option>
+				                <option value="2">female</option>
+				              </select>
+				              </div>
+							  
+				          </div>
+						  <div class="form-group col-sm-6">
+				            <label for="validateSelect" class="col-sm-6">Age</label>
+							<div class="col-sm-6">
+				              <select id="validateSelect" name="validateSelect" class="form-control">
+				                <option value="">Select...</option>
+				                <option value="1">11</option>
+				                <option value="2">12</option>
+				              </select>
+				              </div>
+							  
+				          </div>
+						   <div class="form-group col-sm-6">
+						      <label for="name" class="col-sm-6">Date of Birth</label>
+								<div class="col-sm-6">
+						        	<input type="text" class="form-control" name="name" id="name">
+								</div>
+						    </div>
+							 <div class="form-group col-sm-6">
+						      <label for="name" class="col-sm-6">Date of Joining</label>
+								<div class="col-sm-6">
+						        	<input type="text" class="form-control" name="name" id="name">
+								</div>
+						    </div>
+							<div class="form-group col-sm-6">
+				            <label for="validateSelect" class="col-sm-6">Rank</label>
+							<div class="col-sm-6">
+				              <select id="validateSelect" name="validateSelect" class="form-control">
+				                <option value="">Select...</option>
+				                <option value="1">11</option>
+				                <option value="2">12</option>
+				              </select>
+				              </div>
+							  
+				          </div>
+						  <div class="form-group col-sm-6">
+				            <label for="validateSelect" class="col-sm-6">Division</label>
+							<div class="col-sm-6">
+				              <select id="validateSelect" name="validateSelect" class="form-control">
+				                <option value="">Select...</option>
+				                <option value="1">11</option>
+				                <option value="2">12</option>
+				              </select>
+				              </div>
+							  
+				          </div>
+						  <div class="form-group col-sm-6">
+				            <label for="validateSelect" class="col-sm-6">Command</label>
+							<div class="col-sm-6">
+				              <select id="validateSelect" name="validateSelect" class="form-control">
+				                <option value="">Select...</option>
+				                <option value="1">11</option>
+				                <option value="2">12</option>
+				              </select>
+				              </div>
+							  
+				          </div>
+						  <div class="form-group col-sm-6">
+				            <label for="validateSelect" class="col-sm-6">Designation</label>
+							<div class="col-sm-6">
+				              <select id="validateSelect" name="validateSelect" class="form-control">
+				                <option value="">Select...</option>
+				                <option value="1">11</option>
+				                <option value="2">12</option>
+				              </select>
+				              </div>
+							  
+				          </div>
+						   <div class="form-group col-sm-6">
+				            <label for="validateSelect" class="col-sm-6">Initiating officer</label>
+							<div class="col-sm-6">
+				              <select id="validateSelect" name="validateSelect" class="form-control">
+				                <option value="">Select...</option>
+				                <option value="1">11</option>
+				                <option value="2">12</option>
+				              </select>
+				              </div>
+							  
+				          </div>
+						  <div class="form-group col-sm-6">
+						      <label for="name" class="col-sm-6">IC number</label>
+								<div class="col-sm-6">
+						        	<input type="text" class="form-control" name="name" id="name">
+								</div>
+						    </div>
+							<div class="form-group col-sm-6">
+				            <label for="validateSelect" class="col-sm-6">Reviewing officer</label>
+							<div class="col-sm-6">
+				              <select id="validateSelect" name="validateSelect" class="form-control">
+				                <option value="">Select...</option>
+				                <option value="1">11</option>
+				                <option value="2">12</option>
+				              </select>
+				              </div>
+							  
+				          </div>
+						  <div class="form-group col-sm-6">
+						      <label for="name" class="col-sm-6">IC number</label>
+								<div class="col-sm-6">
+						        	<input type="text" class="form-control" name="name" id="name">
+								</div>
+						    </div>
+							<div class="form-group col-sm-6">
+				            <label for="validateSelect" class="col-sm-6">Senior Reviewing officer</label>
+							<div class="col-sm-6">
+				              <select id="validateSelect" name="validateSelect" class="form-control">
+				                <option value="">Select...</option>
+				                <option value="1">11</option>
+				                <option value="2">12</option>
+				              </select>
+				              </div>
+							  
+				          </div>
+						  <div class="form-group col-sm-6">
+						      <label for="name" class="col-sm-6">IC number</label>
+								<div class="col-sm-6">
+						        	<input type="text" class="form-control" name="name" id="name">
+								</div>
+						    </div>
+							<div class="form-group col-sm-6">
+						      <label for="name" class="col-sm-6">Upload Photograph</label>
+								<div class="col-sm-6">
+						        	<input type="text" class="form-control" name="name" id="name">
+								</div>
+						    </div>
+							<div class="form-group col-sm-12 clear">
+						    	<div class="col-sm-8"></div>
+
+						    	<div class="col-sm-4">
+						      <button type="submit" class="btn btn-success">Submit</button>&nbsp;&nbsp;
+						      <button type="reset" class="btn btn-danger">Reset</button>
+						  </div>
+						    </div>
+						    </div>
+						  </fieldset>
+						</form>
+					
+	
+		  
+		  </div>
+          <!-- /widget-content --> 
+        </div>
+        <!-- /widget --> 
+      </div>
+      <!-- /span12-->
+      
+    </div>
+    <!-- /row --> 
+  </div>
+  <!-- /container --> 
+</div>
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6" id="footer-copyright">Indian Army</div>
+      <div class="col-sm-6" id="footer-terms"> All rights reserved by<a target="_blank" href="#"> &nbsp;Span Infotech Private Limited</a> </div>
+    </div>
+  </div>
+</div>
+<!-- Le javascript
+         ================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+<script src="files/js/jquery-1.js"></script> 
+<script src="files/js//jquery-ui-1.js"></script> 
+<script src="files/js//bootstrap.js"></script> 
+<script src="files/js//jquery_002.js"></script> 
+<script src="files/js//jquery_003.js"></script> 
+<script src="files/js//jquery.js"></script> 
+<script src="files/js//Application.js"></script> 
+<!-- <script src="files/js//common.js"></script> 
+ --><a style="display: none;" href="#top" id="back-to-top"><i class="icon-chevron-up"></i></a>
+</body>
+</html>

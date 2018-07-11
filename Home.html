@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Home Page</title>
+<link href="files/css//bootstrap.css" rel="stylesheet">
+<link href="files/css/bootstrap-responsive.css" rel="stylesheet">
+<link href="files/css/fontface.css" rel="stylesheet">
+<link href="files/css/font-awesome.css" rel="stylesheet">
+<link href="files/css/base-admin-3.css" rel="stylesheet">
+</head>
+<body><nav class="navbar navbar-inverse" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"> <span class="sr-only">Toggle navigation</span> <i class="icon-cog"></i> </button>
+      <img class="logo" src="files/images/logo.png"/>
+	  <a class="navbar-brand" href="#/themes/base/index.html">Indian Military</a> </div>
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown"> <a href="javscript:;" class="dropdown-toggle" data-toggle="dropdown"> <i class="icon-off"></i> Logout <b class="caret"></b> </a>
+          <ul class="dropdown-menu">
+            <li><a href="#/themes/base/account.html">Logout</a></li>
+          </ul>
+        </li>
+        <li class="dropdown"> <a href="javscript:;" class="dropdown-toggle" data-toggle="dropdown"> <i class="icon-user"></i>&nbsp;Brig. Vikram Singh<b class="caret"></b> </a>
+          <ul class="dropdown-menu">
+            <li><a href="#">My Profile</a></li>
+			<li class="divider"></li>
+            <li><a href="#">Account Settings</a></li>
+            
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="subnavbar">
+  
+</div>
+<div class="main">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="widget stacked ">
+          <div class="widget-header"> <i class="icon-user"></i>
+            <h3 class="master-header">Administrator</h3>
+          </div>
+          <!-- /widget-header -->
+          <div class="widget-content">
+            <div class="tabbable">
+              <ul class="nav nav-tabs">
+			  <li  class="active"><a href="#home" data-toggle="tab">Home</a></li>
+                <li><a href="#officer" data-toggle="tab">Officer Details</a></li>
+				<li><a href="#competency" data-toggle="tab">Competences</a></li>
+                <li><a href="#competancy_parameter" data-toggle="tab">Add Competences Parameters</a></li>
+				<li><a href="#rating" data-toggle="tab">View Ratings</a></li>
+              </ul>
+              <div class="tab-content">
+               <div class="tab-pane active" id="home">
+                <div class="col-sm-12">
+                  <div class="table-responsive">
+					<table class="table table-bordered table-hover table-striped">
+					        <thead>
+					          <tr>
+					            <th>IC Number</th>
+					            <th>Officer Name</th>
+					            <th>Rank </th>
+					            <th>Initiating Officer</th>
+								<th>Reviewing Officer</th>
+								<th>Senior Reviewing Officer</th>
+								<th>Action</th>
+					          </tr>
+					        </thead>
+					        <tbody>
+					          <tr>
+					            <td>IC9778L</td>
+								 <td>Lt.Col.Suraj Thappa</td>
+					            <td>Lieutenant Colonel</td>
+					            <td>Col. Vikram Singh</td>
+								<td>Brig. Ranjeet Singh</td>
+					            <td>Maj. Gen. Vikas Singh</td>
+								<td><button type="button" class="btn btn-primary">View Info</button></td>
+					          </tr>
+					         <tr>
+					            <td>IC97234L</td>
+								 <td>Lt.Col.Sahil Mittal</td>
+					            <td>Lieutenant Colonel</td>
+					            <td>Col. Vikram Singh</td>
+								<td>Brig. Ranjeet Singh</td>
+					            <td>Maj. Gen. Vikas Singh</td>
+								<td><button type="button" class="btn btn-primary">View Info</button></td>
+					          </tr>
+					        </tbody>
+					      </table>
+					  </div>
+                </div>
+               
+              </div> 
+              <div class="tab-pane" id="officer">
+                <div class="col-sm-12">
+				<a class="btn btn-success " href="Officer.html">Add Officer</a>
+				<br/><br/>
+                  <div class="table-responsive">
+						<table class="table table-bordered table-hover table-striped">
+					        <thead>
+					          <tr>
+					            <th>IC Number</th>
+					            <th>Officer Name</th>
+					            <th>Rank </th>
+					            <th>Initiating Officer</th>
+								<th>Reviewing Officer</th>
+								<th>Senior Reviewing Officer</th>
+								<th>Action</th>
+					          </tr>
+					        </thead>
+					        <tbody>
+							
+					          <tr>
+					            <td><input type="text" name="input1" value="" class="form-control"></td>
+								<td><input type="text" name="input1" value="" class="form-control"></td>
+					            <td><input type="text" name="input1" value="" class="form-control"></td>
+					            <td><input type="text" name="input1" value="" class="form-control"></td>
+								<td><input type="text" name="input1" value="" class="form-control"></td>
+					            <td><input type="text" name="input1" value="" class="form-control"></td>
+								<td><input type="text" name="input1" value="" class="form-control"></td>
+					          </tr>
+							  <tr>
+					            <td>IC9778L</td>
+								 <td>Lt.Col.Suraj Thappa</td>
+					            <td>Lieutenant Colonel</td>
+					            <td>Col. Vikram Singh</td>
+								<td>Brig. Ranjeet Singh</td>
+					            <td>Maj. Gen. Vikas Singh</td>
+								<td><a class="btn btn-primary "  href="Officer.html">Edit</a>&nbsp;<a class="btn btn-danger " data-toggle="modal" href="#">Delete</a></td>
+					          </tr>
+							  <tr>
+					            <td>IC92378L</td>
+								 <td>Lt.Col.Suresh Nakka</td>
+					            <td>Lieutenant Colonel</td>
+					            <td>Col. Vikram Singh</td>
+								<td>Brig. Ranjeet Singh</td>
+					            <td>Maj. Gen. Vikas Singh</td>
+								<td><a class="btn btn-primary "  href="Officer.html">Edit</a>&nbsp;<a class="btn btn-danger " data-toggle="modal" href="#">Delete</a></td>
+					          </tr>
+					         
+					        </tbody>
+					      </table>
+					  </div>
+                </div>
+               
+              </div>
+            
+                <div class="tab-pane " id="competency">
+                  <div>
+				 <form class="form-horizontal" role="form" id="validation-form1" action="/">
+                    <div class="block1">
+                      <div class="col-sm-4">
+                       <label class="form-headings">Select a Hierarchy</label>
+					   <select id="validateSelect" name="validateSelect" class="form-control">
+				                <option value="">Select...</option>
+				                <option value="1">1</option>
+				                <option value="2">2</option>
+				                <option value="3">3</option>
+				                <option value="4">4</option>
+				                <option value="5">5</option>
+				              </select>
+                      </div>
+                      <div class="col-sm-4">
+                       <label class="form-headings">Select a Division</label>
+					   <select id="validateSelect" name="validateSelect" class="form-control">
+				                <option value="">Select...</option>
+				                <option value="1">1</option>
+				                <option value="2">2</option>
+				                <option value="3">3</option>
+				                <option value="4">4</option>
+				                <option value="5">5</option>
+				              </select>
+                      </div>
+                      <div class="col-sm-4">
+                       <label class="form-headings">Select a Employee Rank</label>
+					   <select id="validateSelect" name="validateSelect" class="form-control">
+				                <option value="">Select...</option>
+				                <option value="1">1</option>
+				                <option value="2">2</option>
+				                <option value="3">3</option>
+				                <option value="4">4</option>
+				                <option value="5">5</option>
+				              </select>
+                      </div>
+					  <div style="margin:10px 0">&nbsp;</div>
+					 <div class="clear"></div>
+					  <div class="col-sm-5">
+                       <label class="form-headings">List of Competencies Present for a Rank</label>
+					   <div class="table-responsive">
+						<table class="table table-bordered table-hover table-striped">
+					        <thead>
+					          <tr>
+					            <th>Name</th>
+					            <th>Edit </th>
+					            <th>Delete </th>
+					          </tr>
+					        </thead>
+					        <tbody>
+							
+							  <tr>
+					            <td>Lt.Col.Suraj Thappa</td>
+								 <td><a class="btn btn-primary "  href="Competency.html">Edit</a></td>
+					            <td><button class="btn btn-danger submit" type="submit">Delete</button></td>
+					            </tr>
+							  <tr>
+					            <td>Lt.Col.Sahil Mittal</td>
+								 <td><a class="btn btn-primary "  href="Competency.html">Edit</a></td>
+					            <td><button class="btn btn-danger submit" type="submit">Delete</button></td>
+					            </tr>
+					         
+					        </tbody>
+					      </table>
+					  </div>
+                      </div>
+					  <div style="text-align:center" class="col-sm-2">
+                       <button class="btn btn-warning submit" type="submit">Submit</button>
+                      </div>
+					  <div class="col-sm-5">
+                       <label class="form-headings">List of all competencies</label>
+					   <div class="table-responsive">
+						<table class="table table-bordered table-hover table-striped">
+					        <thead>
+					          <tr>
+					            <th>Name</th>
+					          </tr>
+					        </thead>
+					        <tbody>
+							
+							  <tr>
+					            <td>Lt.Col.Suraj Thappa</td>
+					            </tr>
+							  <tr>
+					            <td>Lt.Col.Sahil Mittal</td>
+					            </tr>
+					         <tr>
+					            <td><a class="btn btn-primary "  href="Competency.html">Add Competency</a></td>
+					            </tr>
+					        </tbody>
+					      </table>
+					  </div>
+					 
+                      </div>
+                      <div class="col-sm-8">
+                        <button class="btn btn-info submit" type="submit">Submit</button>
+                      </div>
+                    </div>
+                  </form>
+				  <br/>
+					<div class="clear"></div>
+                 
+                </div>
+                </div>
+                <div class="tab-pane" id="competancy_parameter">
+                 <div class="col-sm-12">
+				<a class="btn btn-success " href="Competency_parameters.html">Add Competency Parameter</a>
+				<br/><br/>
+                  <div class="table-responsive">
+						<table class="table table-bordered table-hover table-striped">
+					        <thead>
+					          <tr>
+					            <th>Hierarchy </th>
+					            <th>Division</th>
+					            <th>Rank </th>
+								<th>Action</th>
+					          </tr>
+					        </thead>
+					        <tbody>
+							
+					          <tr>
+					            <td><input type="text" name="input1" value="" class="form-control"></td>
+								<td><input type="text" name="input1" value="" class="form-control"></td>
+					            <td><input type="text" name="input1" value="" class="form-control"></td>
+					            <td><input type="text" name="input1" value="" class="form-control"></td>
+					          </tr>
+							  <tr>
+					            <td>Corps</td>
+								 <td>4th Infantry Division</td>
+					            <td>Maj. Gen. Vikas Singh</td>
+								<td><a class="btn btn-primary "  href="Competency_parameters.html">Edit</a>&nbsp;<a class="btn btn-danger " data-toggle="modal" href="#">Delete</a></td>
+					          </tr>
+							 <tr>
+					            <td>Corps</td>
+								 <td>4th Infantry Division</td>
+					            <td>Maj. Gen. Sahil Mittal</td>
+								<td><a class="btn btn-primary "  href="Competency_parameters.html">Edit</a>&nbsp;<a class="btn btn-danger " data-toggle="modal" href="#">Delete</a></td>
+					          </tr>
+					         
+					        </tbody>
+					      </table>
+					  </div>
+                </div>
+                </div>
+			<div class="tab-pane" id="rating">
+				 <div class="block1">
+                      <div class="col-sm-4">
+                       <label class="form-headings">Select a Hierarchy</label>
+					   <select id="validateSelect" name="validateSelect" class="form-control">
+				                <option value="">Select...</option>
+				                <option value="1">1</option>
+				                <option value="2">2</option>
+				                <option value="3">3</option>
+				                <option value="4">4</option>
+				                <option value="5">5</option>
+				              </select>
+                      </div>
+                      <div class="col-sm-4">
+                       <label class="form-headings">Select a Employee Rank</label>
+					   <select id="validateSelect" name="validateSelect" class="form-control">
+				                <option value="">Select...</option>
+				                <option value="1">1</option>
+				                <option value="2">2</option>
+				                <option value="3">3</option>
+				                <option value="4">4</option>
+				                <option value="5">5</option>
+				              </select>
+                      </div>
+                      <div class="col-sm-4">
+                       <label class="form-headings">Select a Division</label>
+					   <select id="validateSelect" name="validateSelect" class="form-control">
+				                <option value="">Select...</option>
+				                <option value="1">1</option>
+				                <option value="2">2</option>
+				                <option value="3">3</option>
+				                <option value="4">4</option>
+				                <option value="5">5</option>
+				              </select>
+                      </div>
+					    <div style="margin:10px 0">&nbsp;</div>
+					 <div class="clear"></div>
+					  <div class="col-sm-12">
+					   <div class="table-responsive">
+						<table class="table table-bordered table-hover table-striped">
+					        <thead>
+					          <tr>
+					            <th>IC Number</th>
+					            <th>Officer Name</th>
+					            <th>Rank </th>
+								<th>Initiating officer </th>
+								<th>Reviewing officer </th>
+								<th>Senior Reviewing officer </th>
+								<th>Action </th>
+					          </tr>
+					        </thead>
+					        <tbody>
+							
+							  <tr>
+					          <td>IC9778L</td>
+								 <td>Lt.Col.Suraj Thappa</td>
+					            <td>Lieutenant Colonel</td>
+					            <td>Col. Vikram Singh</td>
+								<td>Brig. Ranjeet Singh</td>
+					            <td>Maj. Gen. Vikas Singh</td>
+								<td><a class="btn btn-primary "  href="Officer.html">Edit</a>&nbsp;<a class="btn btn-danger " data-toggle="modal" href="#">Delete</a></td>
+					            </tr>
+							 
+					         
+					        </tbody>
+					      </table>
+					  </div>
+                      </div>
+                      <div class="col-sm-8">
+                        <button class="btn btn-info submit" type="submit">Submit</button>
+                      </div>
+                    </div>
+			</div>
+			
+			 </div>
+			  </div>
+          </div>
+          <!-- /widget-content --> 
+        </div>
+        <!-- /widget --> 
+      </div>
+      <!-- /span12-->
+      
+    </div>
+    <!-- /row --> 
+  </div>
+  <!-- /container --> 
+</div>
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6" id="footer-copyright">Indian Army </div>
+      <div class="col-md-6" id="footer-terms"> All rights reserved by<a target="_blank" href="#"> &nbsp;Span Infotech Private Limited</a> </div>
+    </div>
+  </div>
+</div>
+<!-- Le javascript
+         ================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+<script src="files/js/jquery-1.js"></script> 
+<script src="files/js//jquery-ui-1.js"></script> 
+<script src="files/js//bootstrap.js"></script> 
+<script src="files/js//jquery_002.js"></script> 
+<script src="files/js//jquery_003.js"></script> 
+<script src="files/js//jquery.js"></script> 
+<script src="files/js//Application.js"></script> 
+<!-- <script src="files/js//common.js"></script> 
+ --><a style="display: none;" href="#top" id="back-to-top"><i class="icon-chevron-up"></i></a>
+</body>
+</html>
